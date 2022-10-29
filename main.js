@@ -352,34 +352,86 @@ the function constructor
 //ES6 MAP
 //map is a collection of data, key-value pair
 
-var map=new Map()
-map.set('key1','dhaka')
-map.set('key2','India')
-map.set('key3','America')
-//
-// console.log(map.values())
-// console.log(map.keys())
+// var map=new Map()
+// map.set('key1','dhaka')
+// map.set('key2','India')
+// map.set('key3','America')
+// //
+// // console.log(map.values())
+// // console.log(map.keys())
 
-// ES6 MAP => delete(key), get(key), clear(),has(value)
-// map.delete('key1')
-// map.clear()
+// // ES6 MAP => delete(key), get(key), clear(),has(value)
+// // map.delete('key1')
+// // map.clear()
 
 
-for(let myvalue of map.values()){
-    console.log(myvalue)
-}
+// for(let myvalue of map.values()){
+//     console.log(myvalue)
+// }
 
 
 //ES6 SET
 
+//set
+//duplicate value rakha jabe nah
+// var mySet=new Set()
+// mySet.add("A")
+// mySet.add("A")
+// mySet.add("C")
 
+// console.log(mySet)
+
+//or)
+
+// var mySet=new Set(['A','B','C'])
+// console.log(mySet)
 
 
 //****************************************
 
 
-//*********** Object ******************
+//*********** Class and Object ***********
+//=========Class===========
 
+// class MyClass{
+    
+//      MyFun1(){
+//         console.log("bismillah")
+//     }
+//     MyFun2(x){
+//         console.log(x)
+//     }
+//     MyFun3(){
+//         console.log("bismillah")
+//     }
+
+// }
+
+// var obj=new MyClass
+// obj.MyFun1()
+// obj.MyFun2(1)
+
+
+
+//class Constructor
+
+// class MyClass{
+//     constructor(x,y){
+//         this.firstNum=x
+//         this.secondNum=y
+//         console.log('constructor ',this.firstNum)
+//     }
+
+//     add(){
+//        let res= this.firstNum+this.secondNum
+//        console.log(res)
+//     }
+// }
+
+// var obj=new MyClass(10,20)
+// obj.add()
+
+//==========Object===========
 // var sakib={
 //     name:"khan",
 //     age:30,
@@ -402,19 +454,95 @@ for(let myvalue of map.values()){
 //     console.log(value)
 // }
 
+
+//==============static keyword======
+//static keyword use korle object kora jabe nah. class er sathe sora sori somporko thake
+
+// class MyClass{
+//     static hello(){
+//         console.log('Hellow World')
+//     }
+// }
+
+
+// var obj=new MyClass()
+// obj.hello()
+
+//static call
+// MyClass.hello()
+
+
+//==========Inheritance============
+
+// class Parent{
+//     hello1(params){
+//         console.log("Hello 1 Function")
+//     }
+//     hello2(params){
+//         console.log("Hello 2 Function")
+//     }
+// }
+
+// class Child extends Parent{
+
+//     //function/method overriding. child modify korte pare
+//     hello1(params){
+//         console.log("Hello 2 Function")
+//     }
+// }
+
+// var obj = new Child()
+// obj.hello1()
+
+
+//===========Super keyword=========
+//child class er moddho parant class e r sorasori method poroperty dhora jai
+
+// class Parent{
+//     hello1(params){
+//         console.log("Hello 1 Function")
+//     }
+//     hello2(params){
+//         console.log("Hello 2 Function")
+//     }
+// }
+
+// class Child extends Parent{
+
+//     //function/method overriding. child modify korte pare
+//    demo(){
+//     super.hello1()
+//     super.hello2()
+//    }
+// }
+
+// var obj = new Child()
+// obj.demo()
+
+
+
+
+//****************************************
+
+
+//*********** ES6 Module ******************
+//jot, ektrotito, somonnoi, module export and import
+//Module export and import
+//export- roptani,,, import-amdani
+
+ 
+
+
+
+//****************************************
+
+//*********** use strict ******************
 //****************************************
 
 
 //*********** use strict ******************
 //****************************************
 
-//*********** use strict ******************
-//****************************************
-
 
 //*********** use strict ******************
-//****************************************
-
-
-//*********** use strict ******************
-//****************************************
+//**************************************** 
